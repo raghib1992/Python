@@ -11,3 +11,9 @@ for marks in shaheen:
     total +=marks    # total = total + marks
 
 print(total/subject)
+
+shaheen = [35,55,66,78,99]
+total=sum(shaheen)
+subject=len(shaheen)
+
+print(total/subject)
