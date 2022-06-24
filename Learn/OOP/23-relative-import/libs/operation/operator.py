@@ -1,0 +1,1 @@
+print("myoperator.py:", __name__)
