@@ -11,7 +11,7 @@ y = [z*2 for z in x]
 print(y)
 
 
-friends = ["Ziya", "Sana", "Farhan", "Soaib", "Rashid", "Shaheen"]
+friends = ["Zoya", "Sania", "Farhan", "Soaib", "Rashid", "Shaheen"]
 start_S = []
 
 for friend in friends:

@@ -1,16 +1,3 @@
-# Python
-
-# Method
-dir(str)
-
-
-# Function
-dir(__builtins__)
-
-# Module
-sys.builtin_module_name
-
-
-import os
-sys.prefix
+Ref for Number
+https://docs.python.org/2/tutorial/floatingpoint.html
 
