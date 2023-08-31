@@ -13,7 +13,7 @@ l.remove('bhaijaan')
 print(l)
 ## pop up last element from list
 l = ["Nadim", "Rashid", "Shaheen"]
-l.append("Sanober")
+l.append("uzma")
 print(l)
 love = l.pop()
 print(l)
