@@ -57,5 +57,6 @@ else:
 #     else:
 #         print(f"The number is odd number {number}")
 
-
+for n in range(0,20,2):
+    print(n)
 

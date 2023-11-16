@@ -11,7 +11,7 @@ print(l)
 
 l.remove('bhaijaan')
 print(l)
-## pop up last element from list
+## remove or pop up last element from list
 l = ["Nadim", "Rashid", "Shaheen"]
 l.append("uzma")
 print(l)
@@ -46,14 +46,21 @@ print(name)
 t = ('Jawed', 'Israr', 'Zaman', 'Zaman')
 print(t[2])
 print(t.count('Zaman'))
-print(t.index('Israr'))
+print(t.index('Zaman'))
+## Append tuple 
+s=(2,5,8)
+s_append = s + (8, 16, 67)
+print(s_append)
+print(type(s),s)
+s_append = s + t
+print(s_append)
 
 # Set
 # set set not allowed order
 car = {"BMW", "Merceedes", "Jaguar"}
 print(car)
 
-# MOdify sets
+# Modify sets
 car.add("Verna")
 print(car)
 
