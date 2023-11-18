@@ -2,6 +2,7 @@
 
 input = int(input("Check your number: "))
 
+
 def prime(number):
     prime_checker = True
     for i in range(2, number): 
@@ -14,4 +15,3 @@ def prime(number):
 
 
 prime(number=input)
-    

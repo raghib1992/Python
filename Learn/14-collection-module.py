@@ -8,7 +8,7 @@ print(Counter(number))
 a = ['a', 'a', 'a', 'b', 'b','b', 'b','b', 'b', 'c', 'c', 'c', 'c','c', 'c','c', 'c', ]
 print(Counter(a).most_common())
 
-sentence = "Radha in nibu mein buni ki dhara"
+sentence = "Radha ki nibu mein buni ki dhara"
 s = Counter(sentence.lower().split())
 print(s)
 

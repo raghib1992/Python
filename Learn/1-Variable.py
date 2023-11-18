@@ -17,9 +17,10 @@ print (name * 2)
 name = 'Shaheen'
 title = 'akhtar'
 print (name + title)
+print (name + " " + title)
 
-name = 'Yashmin'
-title = 'akhtar'
+name = 'Uzma'
+title = 'Akhtar'
 greeting = f'Hello, {title}'
 print(f"Hello, {name}")
 print(greeting)
@@ -81,3 +82,12 @@ print(New_Name)
 
 statement = "Hyderabad is a very beautiful city and people of Hyderabad is very polite"
 print(statement.split())
+
+
+# Trunc
+
+
+import math
+float = 12.86785
+print("The value of number is: ",end="")
+print (math.trunc(float))
