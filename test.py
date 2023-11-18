@@ -1,9 +1,7 @@
-from flask import Flask
+my_list = [1,2,3,4,5]
 
-app = Flask(__name__)
+for i in my_list:
+    my_list.remove(i)
+    print(my_list)
 
-@app.route('/') # 'http://google.com/'
-def home():
-    return "Hello Raghib"
-
-app.run(port=5000)
+print(my_list)
