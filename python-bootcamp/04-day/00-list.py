@@ -1,5 +1,3 @@
-
-
 l = ["Nadim", "Rashid", "Shaheen"]
 print(l)
 #['Nadim', 'Rashid', 'Shaheen']

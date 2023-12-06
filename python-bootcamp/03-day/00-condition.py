@@ -38,7 +38,7 @@ height = int(input("What is your height in cm? "))
 # else:
 #     print('You cant ride')
 
-#Multiple fi condition
+#Multiple if condition
 if height >= 120:
     print("you can ride")
     age    = int(input("What is your age? "))

@@ -1,7 +1,4 @@
-my_list = [1,2,3,4,5]
+a,b ="pq"
+b,c = "rs"
 
-for i in my_list:
-    my_list.remove(i)
-    print(my_list)
-
-print(my_list)
+print(a,b,c)
