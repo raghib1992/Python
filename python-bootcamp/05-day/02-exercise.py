@@ -1,5 +1,6 @@
 # 🚨 Don't change the code below 👇
-student_scores = input("Input a list of student scores ").split()
+student_scores = input("Input a list of student scores ").split(" ")
+print(student_scores)
 # 🚨 Don't change the code above 👆
 
 #Write your code below this row 👇

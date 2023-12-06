@@ -6,8 +6,9 @@ import os
 
 
 print(hangman_art.logo)
+# print(word_list)
 
-# A list od word
+# A list of word
 # word_list = ["cat", "ball", "pen"]
 
 # variable lives to keep track of the number of lives left
