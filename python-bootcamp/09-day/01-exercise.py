@@ -1,7 +1,3 @@
-# You have access to a database of student_scores in the format of a dictionary. The keys in student_scores are the names of the students and the values are their exam scores.
-
-# Write a program that converts their scores to grades. By the end of your program, you should have a new dictionary called student_grades that should contain student names for keys and their grades for values. The final version of the student_grades dictionary will be checked.
-
 student_scores = {
   "Harry": 81,
   "Ron": 78,
@@ -9,16 +5,23 @@ student_scores = {
   "Draco": 74,
   "Neville": 62,
 }
+# 🚨 Don't change the code above 👆
 
-student_grades= {}
-for key in student_scores:
-    if student_scores[key] > 90 and student_scores[key] <= 100:
-        student_grades[key] = "Outstanding"
-    elif student_scores[key] > 80:
-        student_grades[key] = "Exceeds Expectations"
-    elif student_scores[key] > 70:
-        student_grades[key] = "Acceptable"
-    else:
+#TODO-1: Create an empty dictionary called student_grades.
+student_grades = {}
+
+#TODO-2: Write your code below to add the grades to student_grades.👇
+
+for key,value in student_scores.items():
+    if value <= 70:
         student_grades[key] = "Fail"
+    elif value <= 80:
+        student_grades[key] = "Acceptable"
+    elif  value <= 90:
+        student_grades[key] = "Exceeds Expectations"
+    elif value <= 100:
+        student_grades[key] = "Outstanding" 
+    
 
+# 🚨 Don't change the code below 👇
 print(student_grades)

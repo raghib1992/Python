@@ -16,6 +16,9 @@ def function_in_leap(year):
 
 
 def days_in_month(year,month):
+    """
+    Check numbers of days in months
+    """
     if month < 1 or month > 12:
         return "Invalid Input"
     month_days = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]

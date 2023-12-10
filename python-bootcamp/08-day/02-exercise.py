@@ -5,7 +5,7 @@ input = int(input("Check your number: "))
 
 def prime(number):
     prime_checker = True
-    for i in range(2, number): 
+    for i in range(2, number):
         if number % i == 0:
             prime_checker = False 
     if prime_checker:

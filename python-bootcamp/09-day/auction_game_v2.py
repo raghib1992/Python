@@ -1,27 +1,29 @@
-import art
+from art import logo
+import os
+clear = lambda: os.system('cls')
 
-print(art.logo)
+print(logo)
 
-auction = {}
+bidding_dict = {}
+bidding = "yes"
 
-bidding_finished = False
+while bidding == "yes":
+    name = input("What is your name? ")
+    bid = int(input("What is your bid?  $"))
 
-while not bidding_finished:
-    name = input("What is bidder name: ")
-    bid_amount = int(input("What is the bid amount: "))
-    auction[name] = bid_amount
-    want_to_bid = input("Want to bid again: 'y' or 'n'\n")
-    if want_to_bid == "n":
-        bidding_finished = True
+    bidding_dict[name] = bid
+    more = input("Is there another user to bid? \"Y\" or \"N\": ").lower()
+    if more == "y":
+        bidding = "yes"
+    else:
+        bidding = "no"
+    clear()
+    
+value = 0
+winner =""
+for bidder in bidding_dict:
+    if bidding_dict[bidder] > value:
+        value = bidding_dict[bidder]
+        winner = bidder
 
-
-highest_bid = 0
-winner = ''
-
-for key in auction:
-    prize = auction[key]
-    if prize > highest_bid:
-        highest_bid = prize
-        winner = key
-
-print(f"Highest bidder is {winner}")
+print(f"Winner is {winner}")

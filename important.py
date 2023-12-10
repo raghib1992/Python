@@ -10,7 +10,7 @@ print(l[0])
 print(l[-2])
 # print from index 1 to till last
 print(l[1:])
-# print starting 4 index
+# print from index 0 to index 3 (not index 4)
 print(l[:4])
 # grab from index 1 to index except last 1, if there was -2 then except last two index grab all
 print(l[1:-1])
