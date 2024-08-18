@@ -1,5 +1,5 @@
-#if else condition
-# Condition for roller coaster ride is, height sould be greater than 120 cm
+# if else condition
+# Condition for roller coaster ride is, height of rider should be greater than 120 cm
 
 # height = int(input("What is your height in cm? "))
 
@@ -9,8 +9,8 @@
 #     print('You cant ride')
 
 
-#Nested if and else condition
-# age more than 18 should pay adult fare 
+# Nested if and else condition
+# Age of rider more than 18 years should pay adult fare Rs 300 otherwse pay childer fare Rs 150
 height = int(input("What is your height in cm? "))
 
 
@@ -24,8 +24,9 @@ height = int(input("What is your height in cm? "))
 # else:
 #     print('You cant ride')
 
-#Nested if, else and elif condiiton
-#For age less than 18 pay $5, for age 18 pay $7 and for more than age 18 pay $12
+
+# Nested if, else and elif condiiton
+# For age less than 18 pay $5, for age 18 pay $7 and for more than age 18 pay $12
 # if height >= 120:
 #     print("you can ride")
 #     age    = int(input("What is your age? "))
@@ -38,7 +39,7 @@ height = int(input("What is your height in cm? "))
 # else:
 #     print('You cant ride')
 
-#Multiple if condition
+# Multiple if condition
 if height >= 120:
     print("you can ride")
     age    = int(input("What is your age? "))

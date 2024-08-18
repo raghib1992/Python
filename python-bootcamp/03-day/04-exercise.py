@@ -8,11 +8,11 @@
 
 # Large Pizza: $25
 
-# Pepperoni for Small Pizza: +$2
+# Pepperoni for Small Pizza add $2
 
-# Pepperoni for Medium or Large Pizza: +$3
+# Pepperoni for Medium or Large Pizza add $3
 
-# Extra cheese for any size pizza: + $1
+# Extra cheese for any size pizza add $1
 
 order = input("What size of pizza do you want? (Small, Medium or Large) \n")
 pep = input("Do you want pepperoni? (Y or N) ")

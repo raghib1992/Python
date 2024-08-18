@@ -1,3 +1,5 @@
+# calculate average height
+
 # 🚨 Don't change the code below 👇
 student_heights = input("Input a list of student heights ").split(",")
 print(student_heights)

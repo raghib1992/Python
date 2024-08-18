@@ -13,7 +13,8 @@ person = input("How many person to split the bills? ")
 
 total_amount = float(float(bill) * (1 + int(tip)/100))
 print(f"Total amount including tip needs to pay {total_amount}",type(total_amount))
-per_person = round(total_amount/int(person),2)
-print(per_person)
-per_person = "{:.2f}".format(per_person)
+# per_person = round(total_amount/int(person),2)
+# print(per_person)
+# per_person = "{:.2f}".format(total_amount/int(person))
+per_person = f"{total_amount/int(person):.2f}"
 print(f"Each Person should pay: ${per_person}")

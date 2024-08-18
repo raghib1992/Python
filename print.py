@@ -3,5 +3,7 @@
 
 # print("Hello Python", sep='#', end='&')
 
-print(5 * 3)
-print("5"*3)
+# print(5 * 3)
+# print("5"*3)
+
+print("hello")

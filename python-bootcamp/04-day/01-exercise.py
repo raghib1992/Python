@@ -3,12 +3,15 @@
 # Important: You are not allowed to use the choice() function
 import random
 
-# nam = input("Give the list of name separated by \",\": ")
-# name = nam.split(",")
-# print(name)
-name = ["Angela", "Ben", "Jenny", "Michael", "Chloe"]
+nam = (input("Give the list of name separated by \",\": ")).replace(" ","")
+print(nam)
+name = nam.split(",")
+print(name,type(name))
+
+# name = ["Angela", "Ben", "Jenny", "Michael", "Chloe"]
 # print(random.choice(name))
 
 num = random.randint(0,(len(name)-1))
 print(num)
 print(name[num])
+

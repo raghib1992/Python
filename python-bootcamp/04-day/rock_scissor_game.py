@@ -32,6 +32,6 @@ scissors = '''
 choice = [rock, paper, scissors]
 # print(choice[2])
 user = int(input("Your input for '0 for Rock', '1 for paper' and '2 for Scissors: "))
-computer = print(f"Comper had choose \n {choice[random.randint(0,2)]}")
+computer = print(f"Computer had choose \n {choice[random.randint(0,2)]}")
 user_show = computer = print(f"User had choose \n {choice[user]}")
 

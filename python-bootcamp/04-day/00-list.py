@@ -43,6 +43,7 @@ print(f"Name of all brother and sisters are {Girl + Boy}")
 # Name of all brother and sisters are ['Uzma', 'Nilufar', 'Neshat', 'Shaheen', 'Rashid', 'Raghib']
 family = [Girl, Boy]
 print(family)
+# [['Uzma', 'Nilufar', 'Neshat', 'Shaheen'], ['Rashid', 'Raghib']]
 
 a = [3,5]
 b = [2,4]
@@ -52,10 +53,13 @@ print(a+b)
 # Sort - sort in alphabetical order
 name = ['uzma', 'nilu', 'raghib', 'rashid', 'neshat', 'shaheen', 'bushra', 'ilma', 'inaya', 'afsa', 'umar', 'abraaz']
 print(name)
+# ['uzma', 'nilu', 'raghib', 'rashid', 'neshat', 'shaheen', 'bushra', 'ilma', 'inaya', 'afsa', 'umar', 'abraaz']
+
 name.sort()
 print(name)
-
+# ['abraaz', 'afsa', 'bushra', 'ilma', 'inaya', 'neshat', 'nilu', 'raghib', 'rashid', 'shaheen', 'umar', 'uzma']
 
 # Check list lenght
 l = [1,2,3,4]
 print(len(l))
+# 4

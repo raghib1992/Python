@@ -2,7 +2,7 @@
 # Kindly mention the your age in months, weeks and days
 age = input("What's your current age? \n")
 
-years_remaining = 90 - int(age)
+years_remaining = 60 - int(age)
 print(f"Number of years left {years_remaining}")
 
 days_remining = years_remaining * 365
