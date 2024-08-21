@@ -6,12 +6,12 @@ import os
 
 
 print(hangman_art.logo)
-# print(word_list)
+# # print(word_list)
 
-# A list of word
-# word_list = ["cat", "ball", "pen"]
+# # A list of word
+word_list = ["cat", "ball", "pen"]
 
-# variable lives to keep track of the number of lives left
+# # variable lives to keep track of the number of lives left
 lives = 6
 print(hangman_art.stages[6])
 
@@ -19,7 +19,7 @@ print(hangman_art.stages[6])
 chosen_word = list(random.choice(word_list))
 print(chosen_word)
 
-# Creat a empty list as many as elemant as element
+# # Creat a empty list as many as elemant as element
 display = []
 for _ in range(0,len(chosen_word)):
     display.append("_")
@@ -57,5 +57,5 @@ while not end_of_game:
         print("You Lose the game")
         break
     
-    # # Clearing the Screen
+    # Clearing the Screen
     # os.system('cls')

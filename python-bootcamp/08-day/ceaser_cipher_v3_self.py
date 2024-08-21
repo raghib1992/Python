@@ -1,8 +1,9 @@
+from art import logo
+print(logo)
+
 alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 
-direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n")
-text = input("Type your message:\n").lower()
-shift = int(input("Type the shift number:\n"))
+
 
 def ceaser(text, shift, direction):
     output_text = ""
@@ -14,4 +15,14 @@ def ceaser(text, shift, direction):
         output_text += alphabet[position]
     print(f"Your {direction.lower()} text is: {output_text}")
 
-ceaser(text,shift,direction)
+start = True
+restart = 'y'
+while start:
+    if restart == 'y':
+        direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n")
+        text = input("Type your message:\n").lower()
+        shift = int(input("Type the shift number:\n"))
+        ceaser(text, shift, direction)
+        restart = input("Want to restart the programme again, type (Y/y or N/n): ")
+    else:
+        start = False

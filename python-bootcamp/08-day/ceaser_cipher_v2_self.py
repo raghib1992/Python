@@ -5,13 +5,14 @@ text = input("Type your message:\n").lower()
 shift = int(input("Type the shift number:\n"))
 
 def ceaser(text, shift, direction):
-    output_text = ""
+    words = ""
     for letter in text:
-        if direction.lower() == 'decode':
-            shift *= -1
-        position = alphabet.index(letter) + shift
+        if direction.lower() == 'encode':
+            position = alphabet.index(letter) + shift
+        else:
+            position = alphabet.index(letter) - shift
         position %= len(alphabet)
-        output_text += alphabet[position]
-    print(f"Your {direction.lower()} text is: {output_text}")
+        words += alphabet[position]
+    print(f"Your {direction.lower()} text is: {words}")
 
 ceaser(text,shift,direction)
