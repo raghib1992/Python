@@ -1,6 +1,6 @@
 import yaml
 from jinja2 import Environment, FileSystemLoader
-# import jinja2
+
 # import json
 
 # # Load JSON data
@@ -19,13 +19,15 @@ from jinja2 import Environment, FileSystemLoader
 # with open('output.yaml', 'w') as f:
 #     f.write(rendered_template)
 
+with open('value.yaml','r') as read_file:
+    values = yaml.safe_load(read_file)
+    print(list(values))
 
-if __name__ == "__main__":
-    values = yaml.load(open('./value.yaml'))
-    # Load templates file from templtes folder
-    env = Environment(loader = FileSystemLoader('./templates'),   trim_blocks=True, lstrip_blocks=True)
-    template = env.get_template('compoment_tmpl.j2')
-    for service in values["services"]:
-        file=open("resultfile/SVC-"+service['name']+".yaml", "w")
-        file.write(template.render(service))
-        file.close()
+# Load templates file from templtes folder
+env = Environment(loader = FileSystemLoader('./'))
+template = env.get_template('compoment_tmpl.j2')
+
+for service in values["services"]:
+    file=open("output/SVC-"+service['name']+".yaml", "w")
+    file.write(template.render(service))
+    file.close()

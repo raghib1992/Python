@@ -1,0 +1,9 @@
+apiVersion: test/v1alpha1
+kind: Component
+metadata:
+    name: serviceA
+    labels:
+        environment: uat
+        owner: thaoluong
+spec:
+    type: VM
