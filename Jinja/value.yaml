@@ -1,0 +1,10 @@
+---
+services:
+- name: serviceA
+  env: uat
+  owner: thaoluong
+  type: VM
+- name: ServiceB
+  env: uat1
+  owner: thaoluong 1
+  type: VM
