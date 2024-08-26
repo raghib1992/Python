@@ -1,3 +1,8 @@
+import art
+
+print(art.logo)
+print("Auction has been started")
+
 play = True
 bidding = dict()
 num = 0
@@ -16,4 +21,4 @@ while play:
     if restart.lower() == 'n':
         play = False
 
-print(f"Winner of this e auction is: {winner}")
+print(f"Winner winner chicken 🐓 dinner of this e auction is: {winner} \U0001F603")

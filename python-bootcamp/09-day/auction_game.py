@@ -14,7 +14,7 @@ while want_to_bid == "y":
     user = input("What is the bidder name: ")
     bid_amount = int(input("What is the bid amount: "))
     auction_game(biders=user,amount=bid_amount)
-    want_to_bid = input("Want to bid again: 'y' or 'n'")
+    want_to_bid = input("Want to bid again: 'y' or 'n' ")
 
 
 # print(auction)
