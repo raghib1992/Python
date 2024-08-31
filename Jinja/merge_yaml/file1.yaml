@@ -1,0 +1,42 @@
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  finalizers:
+  - kubernetes.io/pv-protection
+  - external-attacher/csi-trident-netapp-io
+  name: pvc-8bac86ff-d59e-44c2-bdee-25b7d501e1de
+spec:
+  accessModes:
+  - ReadWriteMany
+  capacity:
+    storage: 4Gi
+  csi:
+    driver: csi.trident.netapp.io
+    volumeAttributes:
+      backendUUID: a7c8b114-dffd-4a67-9959-381b570880c5
+      internalName: k8s_brown_pvc_8bac86ff_d59e_44c2_bdee_25b7d501e1de
+      name: pvc-8bac86ff-d59e-44c2-bdee-25b7d501e1de
+      protocol: file
+      storage.kubernetes.io/csiProvisionerIdentity: 1684862793882-8081-csi.trident.netapp.io
+    volumeHandle: pvc-8bac86ff-d59e-44c2-bdee-25b7d501e1de
+  persistentVolumeReclaimPolicy: Retain
+  storageClassName: fsx-ontap-silver
+  volumeMode: Filesystem
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  finalizers:
+    - kubernetes.io/pvc-protection
+  name: shared-brown-dev-001
+  namespace: brown-dev-001
+spec:
+  accessModes:
+    - ReadWriteMany
+  resources:
+    requests:
+      storage: 4Gi
+  storageClassName: fsx-ontap-silver
+  volumeMode: Filesystem
+  volumeName: pvc-8bac86ff-d59e-44c2-bdee-25b7d501e1de

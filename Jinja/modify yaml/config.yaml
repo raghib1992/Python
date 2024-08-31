@@ -1,0 +1,9 @@
+app_name: MyApp
+environment: production
+services:
+  web:
+    image: nginx:latest
+    ports:
+    - 80:80
+    - 443:443
+version: 1.0.0
