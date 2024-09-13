@@ -6,4 +6,7 @@
 # print(5 * 3)
 # print("5"*3)
 
-print("hello")
+# print("hello")
+
+name ='sarwe-brown-dev-001'
+print("-".join(name.split("-")[-2:]))
