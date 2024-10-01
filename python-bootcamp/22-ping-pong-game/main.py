@@ -30,7 +30,7 @@ l_score = Scoreboard((-60,250))
 
 game_on = True
 while game_on:
-    time.sleep(0.07)
+    time.sleep(ball.move_speed)
     screen.update()
     ball.move()
     
