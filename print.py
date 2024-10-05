@@ -8,5 +8,7 @@
 
 # print("hello")
 
-name ='sarwe-brown-dev-001'
-print("-".join(name.split("-")[-2:]))
+with open("python-bootcamp//24-update-file//data.txt") as file:
+    data = file.read()
+
+print(data)
