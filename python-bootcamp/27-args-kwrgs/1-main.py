@@ -37,5 +37,6 @@ class Bus:
         self.model = kw.get("model")
 
 
-my_bus = Bus(make="Ford")
-print(my_car.model)
+my_bus = Bus(make="Ashok Leyland")
+print(my_bus.model)
+print(my_bus.make)
