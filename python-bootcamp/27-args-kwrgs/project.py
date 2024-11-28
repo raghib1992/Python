@@ -5,6 +5,7 @@ window = Tk()
 # window.geometry("300x300")
 window.title("Mile to Km Converter")
 window.config(padx=20,pady=20)
+
 # screen and label to Enter Mile value
 entry = Entry()
 entry.grid(row=0,column=1)
@@ -26,8 +27,6 @@ def calculate():
     mile_input = entry.get()
     km_output = str(int(mile_input)*1.61)
     entry_eq.insert(END,string=km_output)
-    
-    
     
 button = Button(text="calculate",command=calculate)
 button.grid(row=2,column=1)
