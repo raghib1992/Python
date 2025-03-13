@@ -4,6 +4,9 @@ class Person:
         self.name = name
         self.age = age
 
-p1 = Person("Raghib",24)
+p1 = Person("Raghib",31)
+p2 = Person("Uzma", 24)
 
 print(p1.name , p1.age)
+
+print(p2.name)
