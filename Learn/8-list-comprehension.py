@@ -11,7 +11,7 @@ numbers = [1,2,3]
 doubled = [num *2 for num in numbers]
 
 ############
-friends = ['Zaman', 'Shreyanka', 'Sanober', 'saba', 'Shagufta']
+friends = ['Zaman', 'Israr', 'Jitu', 'Poonam', 'Shwetha']
 starts_s = []
 
 for friend in friends:
@@ -19,7 +19,7 @@ for friend in friends:
         starts_s.append(friend)
 print(starts_s)
 
-friends = ['Zaman', 'Shreyanka', 'Sanober', 'saba', 'Israr']
+friends = ['Zaman', 'Israr', 'Jitu', 'Poonam', 'Shwetha']
 starts_s = [friend for friend in friends if friend.startswith("S")]
 
 print(starts_s)

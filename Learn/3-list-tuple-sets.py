@@ -1,80 +1,86 @@
-# List
-l = ["Nadim", "Rashid", "Shaheen"]
-print(l[0])
+# # List
+# l = ["Nadim", "Rashid", "Shaheen"]
+# print(l[0])
 
-# list are mutable
-l[0] ="bhaijaan"
-print(l)
+# # list are mutable
+# l[0] ="bhaijaan"
+# print(l)
 
-l.append('Uzma')
-print(l)
+# l.append('Uzma')
+# print(l)
 
-l.remove('bhaijaan')
-print(l)
-## remove or pop up last element from list
-l = ["Nadim", "Rashid", "Shaheen"]
-l.append("uzma")
-print(l)
-love = l.pop()
-print(l)
-print(f"My love is {love}")
+# l.remove('bhaijaan')
+# print(l)
 
-vowel = ["a", "e", "i", "s", "o", "u"]
-print(vowel)
-consonent = vowel.pop(3)
-print(vowel)
+# ## remove or pop up last element from list
+# l = ["Nadim", "Rashid", "Shaheen"]
+# l.append("uzma")
+# print(l)
+# love = l.pop()
+# print(l)
+# print(f"My love is {love}")
+
+# vowel = ["a", "e", "i", "s", "o", "u"]
+# print(vowel)
+# consonent = vowel.pop(3)
+# print(vowel)
+# print(f"Removed letter is {consonent}")
 
 
-l = ["Raghib", "age", 30]
-print(l)
+# l = ["Raghib", "age", 30]
+# print(l)
 
-### List concatenate
-Girl = ["Uzma", "Nilufar", "Neshat", "Shaheen"]
-Boy = ["Rashid", "Raghib"]
+# ### List concatenate
+# Girl = ["Uzma", "Nilufar", "Neshat", "Shaheen"]
+# Boy = ["Rashid", "Raghib"]
 
-print(f"Name of all brother and sisters are {Girl + Boy}")
+# print(f"Name of all brother and sisters are {Girl + Boy}")
 
-# Sort - sort in alphabetical order
-name = ['uzma', 'nilu', 'raghib', 'rashid', 'neshat', 'shaheen', 'bushra', 'ilma', 'inaya', 'afsa', 'umar', 'abraaz']
-print(name)
-name.sort()
-print(name)
+# # Sort - sort in alphabetical order
+# name = ['uzma', 'nilu', 'raghib', 'rashid', 'neshat', 'shaheen', 'bushra', 'ilma', 'inaya', 'afsa', 'umar', 'abraaz']
+# print(name)
+# name.sort()
+# print(name)
 
 
 #Tuple (immutable)
 # tuple , tuple can't be modified
-t = ('Jawed', 'Israr', 'Zaman', 'Zaman')
-print(t[2])
-print(t.count('Zaman'))
-print(t.index('Zaman'))
+# t = ('Jawed', 'Israr', 'Zaman', 'Zaman')
+# print(t[2])
+# print(t.count('Zaman'))
+# print(t.index('Zaman'))
+
+
 ## Append tuple 
-s=(2,5,8)
-s_append = s + (8, 16, 67)
-print(s_append)
-print(type(s),s)
-s_append = s + t
-print(s_append)
+# s=(2,5,8)
+# s_append = s + (8, 16, 67)
+# print(s_append)
+# print(type(s),s)
+# s_append = s + t
+# print(s_append)
 
-# Set
-# set set not allowed order
-car = {"BMW", "Merceedes", "Jaguar"}
-print(car)
+# # Set
+# # set set not allowed order
+# car = {"BMW", "Merceedes", "Jaguar"}
+# print(car)
 
-# Modify sets
-car.add("Verna")
-print(car)
+# # Modify sets
+# car.add("Verna")
+# print(car)
 
-num = [1,1,1,1,1,1,3,3,3,3,3,2,2,2,2,5,5,5,5,5]
-print(set(num))
+# num = [1,1,1,1,1,1,3,3,3,3,3,2,2,2,2,5,5,5,5,5]
+# print(set(num))
 
 # sets
 friends = {'Pappu', 'Zaman', 'Waquar', 'Murad', 'Irshad', 'Israr', 'Jitender'}
 Kolkata = {'Pappu', 'Zaman'}
 Village_friend = friends.difference(Kolkata)
+print(Village_friend)
 
 Delhi = {'Israr', 'Jitender'}
 
 city_friends = Kolkata.union(Delhi)
-print(Village_friend)
+print(city_friends)
 
 common_frinds = Village_friend.intersection(Delhi)
+print(common_frinds)

@@ -1,5 +1,6 @@
 # Integer
 x = 15
+print(f"The value of x is {x}", type(x))
 
 # Float
 y = 9.21
@@ -7,11 +8,12 @@ result = 100/777
 print(f"The result was {result}")
 # "{value:width.precison f}"
 print(f"The result was {result:1.3f}")
-# priint function and what it will print in the bracket
-print(y)
+# print function and what it will print in the bracket
+print(y, type(y))
 
 # String
 name = "Raghib"
+print(name)
 print (name * 2)
 
 name = 'Shaheen'
@@ -43,21 +45,24 @@ name = "Nadim"
 greeting = "Hello {}, How are you?"
 # format function
 with_name = greeting.format(name)
+print (with_name)
 with_name = greeting.format("Raghib")
 print (with_name)
 
-head, *fail = [1,2,3,4,5]
+head, *fail = [0,1,2,3,4,5,6,7,8,9]
 print (head, fail)
 
 sir, *pao = [1,2,3,4,5,6]
 print(sir, pao)
 
-#***************************
+
 # Indexing 
 Greet = "Hello Raghib"
 print(Greet[0])
 print(Greet[10])
-print(Greet[-2])
+print(Greet[-4])
+
+
 # slicing
 alphabet = "ABCDEFGHIJKLMNOPQRSTUVMXYZ"
 print(alphabet[6])
